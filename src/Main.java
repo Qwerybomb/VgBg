@@ -5,11 +5,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static LocalDate myObj = LocalDate.now();
-    static String mainDirectoryLocation = "C:\\" + myObj;
+    static LocalDate Date = LocalDate.now();
+    // Change the path here to the backup location
+    static String mainDirectoryLocation = "C:\\" + Date;
     public static void CreateDirectory(String Location) {
         File directory = new File(Location);
         if (directory.mkdir()) {
